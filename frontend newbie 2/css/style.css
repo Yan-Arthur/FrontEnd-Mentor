@@ -1,0 +1,207 @@
+@charset "UTF-08";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url(../assets/fonts/outfit/Outfit-VariableFont_wght.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'YoungSerif';
+    src: url(../assets/fonts/young-serif/YoungSerif-Regular.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+#pc{
+    display: none;
+}
+.title{
+    font-family: 'outfit';
+}
+
+.title > h1{
+    text-align: center;
+    padding: 15px;
+}
+
+.title > p{
+    max-width: 80vw;
+    margin: auto;
+    text-align: center;
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.678);
+}
+
+.prep{
+    background-color: #fadff0;
+    max-width: 80vw;
+    height: 170px;
+    margin: 10% auto;
+}
+.prep > h3{
+    font-family: 'Outfit';
+    color: #822E50;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.prep > ul{
+    padding-top: 10px;
+    line-height: 35px;
+    font-family: 'Outfit';
+    padding-left: 25px;
+}
+
+.ingred{
+    max-width: 80vw;
+    height: 300px;
+    margin: auto;
+    padding-left: 18px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0, 0, 0, 0.171);
+    border-bottom-width: 1.5px;
+}
+
+.ingred > h2{
+    color: #844631;
+    font-family: 'Outifit';
+    font-size: 1.8em;
+
+}
+
+.ingred > ul{
+    font-family: 'Outfit';
+    padding-top: 15px;
+    line-height: 35px;
+}
+
+.instruc{
+    max-width: 80vw;
+    height: 600px;
+    margin: auto;
+    padding-left: 18px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0, 0, 0, 0.301);
+    border-bottom-width: 1.5px;
+    padding-top: 30px;
+}
+
+.instruc > h2{
+    color: #844631;
+    font-family: 'Outifit';
+    font-size: 1.8em;
+}
+
+.instruc > ol{
+    font-family: 'Outfit';
+    padding-top: 20px;
+    text-align: justify;
+}
+ol ::marker{
+    color: #703b29;
+}
+
+.nutri > h2{
+    display: inline-block;
+    color: #844631;
+    font-family: 'Outifit';
+    font-size: 1.8em;
+    padding-left: 48px;
+    padding-top: 20px;
+}
+
+.nutri > p{
+    display: inline-block;
+    font-family: 'Outfit';
+    padding-left: 48px;
+    padding-top: 15px;
+    text-align: justify;
+    max-width: 80vw;
+}
+
+.colum{
+    display: grid;
+    font-family: 'Outfit';
+    grid-template-columns: 100px 100px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 70px;
+    
+}
+.itens{
+    line-height: 40px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0, 0, 0, 0.301);
+    border-bottom-width: 1.5px;
+}
+
+#b{
+    color: #703b29;
+}
+
+@media (min-width: 1210px) {
+    html{
+        background-color: #cfbeaf;
+    }
+    #pc{
+        display: block;
+        border-radius: 15px;
+        margin: auto;
+        overflow: hidden;
+        padding-top: 50px;
+    }
+    .photo{
+        border-radius: 15px;
+    }
+    #cell{
+        display: none;
+    }
+    .all{
+        background-color: white;
+        margin: 10% auto;
+        max-width: 50vw;
+        max-height: 100%;
+        border-radius: 12px;
+    }
+    .title{
+        width: 40vw;
+        margin: auto;
+    }
+    .prep{
+        width: 40vw;
+        margin: 10% auto;
+        border-radius: 12px;
+    }
+    .ingred{
+        width: 40vw;
+        height: 40vh;
+    }
+    .ingred > h2{
+        translate: -3.8% 0;
+    }
+    .instruc{
+        width: 40vw;
+        height: 90vh;
+    }
+    .instruc > h2{
+        translate: -3.8% 0;
+    }
+    .instruc > ol{
+        line-height: 30px;
+    }
+    .nutri{
+        width: 40vw;
+        height: 20vh;
+    }
+    .colum{
+        grid-template-columns: 1fr 1fr;
+        width: 40vw;
+        height: 40vh;
+    }
+
+}
